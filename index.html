@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dice Roller</title>
+    <style>
+        body{
+            background-color: #300d30;
+            background-image: linear-gradient(0deg, #300d30 0%, #b5e7ed 100%);
+            height: 100vh;
+
+        }
+        .title{
+            text-align: center;
+        }
+        .dice-img{
+            width: 200px;
+            height: 200px;
+            display: block;
+            margin: 20px auto;
+        }
+        .btn{
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Dice Roller</h1>
-    <img src="./imgs/dice.png" />
+    <h1 class="title">Dice Roller</h1>
+    <img src="./imgs/dice.png" alt="dice" class="dice-img"/>
+    <button type="button" class="btn">Roll Dice</button>
+
+    <script>
+        const min = 1;
+        const max = 6;
+
+        const randomNo = Math.round(Math.random()*(mix-min))+min;
+        console.log(randomNo);
+    </script>
     
 </body>
 </html>
